@@ -121,7 +121,35 @@
            position: absolute;
            top: 1000px; 
            left: 100px;
+           transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
         }
+      
+      #section1 .image-text {
+    display: none; /* Initially hide the text */
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    color: #fff;
+    position: absolute;
+    top: 1100px;
+    left: 100px;
+}
+
+#section1 img:hover + .image-text {
+    display: block; /* Display text on hover */
+}
+      
+      #section1 img.image2{
+           width: 300px; 
+           position: absolute;
+           top: 1620px; 
+           left: 350px; 
+}
+       #section1 img.image3{
+           width: 260px; 
+           position: absolute;
+           top: 1620px; 
+           left: 700px; 
+}
 
         #section2 {
             background-color: #bbb5a7;
@@ -160,13 +188,16 @@
              <h1>Billie Eilish</h1>
         </div>
         <div id="section1">
-            <img src="billie eilish profile photo.jpeg" alt="Your Image Alt Text">
+            <img src="billie eilish profile photo.jpeg" alt="Billie">
+            <img src="variety.jpeg" alt="variety cover" class="image2">
+             <img src="fragrance.jpeg" alt="fragrance" class="image3">
+              <div class="image-text">Hover over the image to see the text</div>
             <div class="about-text">
                 <h2>About Billie Eilish</h2>
                 <p>
                     Billie Eilish (born December 18, 2001, Los Angeles, California, U.S.) American singer-songwriter who first gained recognition in 2015 for the song “Ocean Eyes” and became, in 2020, the youngest person ever to win a Grammy for album of the year.<br>Eilish was born on December 18, 2001, in Los Angeles, California. Her parents, Maggie Baird and Patrick O’Connell, were longtime actors before joining their teenage daughter's professional team. Eilish's full name is Billie Eilish Pirate Baird O'Connell. Her first name is in honor of her maternal grandfather, William; the second was inspired by a conjoined twin her parents saw in a documentary; and the third came from the insistence of her older brother, Finneas.
                 </p>
-            </div>
+              </div>
         </div>
         <div id="section2">
             Your amazing content goes here!
