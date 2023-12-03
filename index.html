@@ -121,21 +121,25 @@
            position: absolute;
            top: 1000px; 
            left: 100px;
-           transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+           transition: opacity 0.3s ease-in-out;
         }
       
-      #section1 .image-text {
-    display: none; /* Initially hide the text */
-    font-size: 20px;
-    font-family: "Arial", sans-serif;
-    color: #fff;
-    position: absolute;
-    top: 1100px;
-    left: 100px;
+        #section1 img:hover {
+           opacity: 0.7; 
+      }
+      
+      #section1 .image-text1 {
+           display: none; 
+           font-size: 20px;
+           font-family: "Arial", sans-serif;
+           color: #fff;
+           position: absolute;
+           transition: opacity 0.3s ease-in-out; 
 }
-
-#section1 img:hover + .image-text {
-    display: block; /* Display text on hover */
+      
+      #section1 img:hover + .image-text {
+           display: block; 
+           opacity: 1; 
 }
       
       #section1 img.image2{
@@ -188,10 +192,14 @@
              <h1>Billie Eilish</h1>
         </div>
         <div id="section1">
-            <img src="billie eilish profile photo.jpeg" alt="Billie">
-            <img src="variety.jpeg" alt="variety cover" class="image2">
-             <img src="fragrance.jpeg" alt="fragrance" class="image3">
-              <div class="image-text">Hover over the image to see the text</div>
+           <img src="billie eilish profile photo.jpeg" alt="Billie">
+    
+           <img src="variety.jpeg" alt="Variety Cover" class="image2">
+           <div class="image-text1">Text for the second image</div>
+    
+           <img src="fragrance.jpeg" alt="Fragrance" class="image3">
+           <div class="image-text2">Text for the third image</div>
+          
             <div class="about-text">
                 <h2>About Billie Eilish</h2>
                 <p>
