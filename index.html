@@ -381,6 +381,43 @@
             height: 2px; 
             background-color: #bda683;
         }
+      .contact-form {
+            position: absolute;
+            top: 4200px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-family: "Arial", sans-serif;
+            color: #bda683;
+}
+
+      .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+}
+
+      .contact-form input,
+      .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+}
+
+      .contact-form textarea {
+           darresize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #2f4529;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #bda683;
+    color: #2f4529;
+}
       
     </style>
 </head> 
@@ -551,6 +588,21 @@
             <div id="divider4"></div>
             <div id="divider5"></div>
             <div id="divider6"></div>
+            <form action="#" method="post" class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="submit" value="Send">
+</form>
             <img src="contactttt.jpeg" alt="contact" class="contact">
         </div>
           <div class="contact-text">
